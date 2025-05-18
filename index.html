@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="calculator-screen">
+                <input type="text" id="screen" placeholder="0" disabled>
+                <hr>
+            </div>
+            <div class="calculator-buttons">
+                <button class="btn blue-btn" onclick="clearDisplay()"><span>C</span></button>
+                <button class="btn blue-btn" onclick="appendToDisplay('%')"><span>%</span></button>
+                <button class="btn blue-btn" onclick="appendToDisplay('/')"><span>/</span></button>
+                <button class="btn blue-btn" onclick="removeLast()"><span><i class="fa-solid fa-delete-left"></i></span></button>
+    
+                <button class="btn" onclick="appendToDisplay('7')"><span>7</span></button>
+                <button class="btn" onclick="appendToDisplay('8')"><span>8</span></button>
+                <button class="btn" onclick="appendToDisplay('9')"><span>9</span></button>
+                <button class="btn blue-btn" onclick="appendToDisplay('*')"><span>*</span></button>
+    
+                <button class="btn" onclick="appendToDisplay('4')"><span>4</span></button>
+                <button class="btn" onclick="appendToDisplay('5')"><span>5</span></button>
+                <button class="btn" onclick="appendToDisplay('6')"><span>6</span></button>
+                <button class="btn blue-btn" onclick="appendToDisplay('-')"><span>-</span></button>
+    
+                <button class="btn" onclick="appendToDisplay('3')"><span>3</span></button>
+                <button class="btn" onclick="appendToDisplay('2')"><span>2</span></button>
+                <button class="btn" onclick="appendToDisplay('1')"><span>1</span></button>
+                <button class="btn blue-btn" onclick="appendToDisplay('+')"><span>+</span></button>
+    
+                <button class="btn disabled"><span></span></button>
+                <button class="btn" onclick="appendToDisplay('0')"><span>0</span></button>
+                <button class="btn" onclick="appendToDisplay('.')"><span>.</span></button>
+                <button class="btn blue-btn" onclick="calculateResult()"><span><i class="fa-solid fa-equals"></i></span></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(Гармония\ цветовых\ градиентов.png) no-repeat center center ;
+    font-size: 2rem;
+}
+.container {
+    width: 400px;
+    height: 600px;
+    display: flex;
+    align-items: flex-end;
+    background-color: rgba(255, 255, 255, 0.073);
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    -moz-backdrop-filter: blur(20px) saturate(180%);
+    border-radius: 12px;
+}
+#screen {
+    width: 100%;
+    background: transparent;
+    text-align: end;
+    border: none;
+    overflow-x: hidden;
+    color: #fff;
+    padding: 20px;
+    font-size: 25px;
+}
+.calculator-screen hr {
+    border: none;
+    height: 1px;
+    background: #fff;
+    margin-bottom: 10px;
+}
+.calculator-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.btn {
+    width:75px;
+    background: transparent;
+    border: none;
+    user-select: none;
+    display: block;
+    height: 75px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    transition: background-color .3s ease;
+    border-radius: 50%;
+}
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.125);
+}
+.blue-btn {
+    color: #0091D9;
+}
+.disabled {
+    visibility: hidden;
+}
